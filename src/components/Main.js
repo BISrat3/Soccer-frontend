@@ -1,10 +1,13 @@
 import React from "react";
 import { Route, Routes} from 'react-router-dom'
+
 import Player from '../pages/Player'
 import Show from '../pages/Show'
 
 function Main (props){
     console.log(props)
+    // const [player, setPlayer] =useState(null)
+    // const URL =""
     return (
         <main>
             <Routes>
