@@ -1,0 +1,27 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://media4.giphy.com/media/Qu1ICtOf3tMp65A6Nm/giphy.gif?cid=790b7611daf470183e367a9dfbba46631ef15aae192797a2&rid=giphy.gif&ct=g');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+}
+
+.player{
+  font-size: 40px;
+  color: darkgreen;
+  text-decoration: none;
+}
+
+.soccer{
+  font-size: 30px;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
