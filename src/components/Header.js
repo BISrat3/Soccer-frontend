@@ -7,7 +7,6 @@ function Header(props){
                 <div >Players</div>
             </Link>
         </nav>
-        
     )
 }
 
