@@ -41,9 +41,31 @@ body{
   position: absolute;
 }
 
+h1{
+  font-size: 20px;
+  color: bisque;
+}
+/* img{
+  background-color: white;
+} */
 /* .container {
   
   /* display: flex;
   flex-direction: column; */
   /* min-height: 100vh; */
 /* } */ 
+
+.show {
+  color: white;
+  width: 400px;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.pic {
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+}
