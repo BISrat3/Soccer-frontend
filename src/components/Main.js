@@ -14,7 +14,7 @@ function Main (props){
     // const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    // const URL = "https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
+    const URL = "https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=brsJpdakUhZMVm70nhAorHMNKCvuuOlDULXFk29tToCtRKfbjI0qiHivNm42&per_page=40"
     
     useEffect(()=>{
       const getPlayer = async()=>{
@@ -24,6 +24,7 @@ function Main (props){
           console.log(data)
           console.log(data.data)
           console.log(data.data.fullname)
+
       }
       getPlayer()
       
@@ -40,9 +41,8 @@ const loaded =() =>{
         <section>  
             <div className ="home username">
                 {players.map((play, idx) =>{
-                    const id= play.url.split('player/').slice(1)
                     return <div className ="container" key={idx}>
-                        <Link to ={`${id}`} className='link'>
+                        <Link to ={`/${play.player_id}`} className='link'>
                         <h3>Name : {play.fullname}</h3> 
                         </Link>
                         <img src={play.image_path} alt={play.common_name}/>
