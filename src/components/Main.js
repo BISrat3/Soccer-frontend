@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 function Main (props){
-    console.log(props.players)
+    // console.log(props.players)
     // const [player, setPlayer] = useState(null)
     const [players, setPlayers] = useState(null)
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players/?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
@@ -14,7 +14,8 @@ function Main (props){
     // const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    const URL ="https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
+    // const URL = "https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
+    
     useEffect(()=>{
       const getPlayer = async()=>{
           const response = await fetch(URL)
@@ -38,12 +39,13 @@ const loaded =() =>{
     return (
         <section>  
             <div className ="home username">
-                {players.map((ele, id) =>{
-                    return <div className ="container" key={id}>
+                {players.map((play, idx) =>{
+                    const id= play.url.split('player/').slice(1)
+                    return <div className ="container" key={idx}>
                         <Link to ={`${id}`} className='link'>
-                        <h3>Name : {ele.fullname}</h3> 
-                        <img src={ele.image_path} alt={ele.common_name}/>
+                        <h3>Name : {play.fullname}</h3> 
                         </Link>
+                        <img src={play.image_path} alt={play.common_name}/>
             </div>
            
                     })}   

@@ -21,8 +21,8 @@ function App() {
       {/* <Main />   */}
       <div>
       <Routes>
-          <Route path="/:id" element={<Player players={players}/>}/>
           <Route path="/" element={<Main players={players} />} />
+          <Route path="/:id" element={<Player players={players}/>}/>
       </Routes>
       </div>
       <Footer />
