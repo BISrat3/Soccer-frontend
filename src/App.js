@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Main from './components/Main';
 import Player from './components/Player';
 import Footer from './components/Footer'
+import Search from './components/Search'
 
 function App() {
   const [players, setPlayer] = useState(null)
@@ -18,6 +19,7 @@ function App() {
       <Header />
         </h1>
       </header>
+      <Search/>
       {/* <Main />   */}
       <div>
       <Routes>

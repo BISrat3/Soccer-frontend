@@ -56,6 +56,9 @@ h1{
 img{
   background-color: white;
   width: 50%;
+  border-radius: 20%;
+  background-image: url('https://images.unsplash.com/photo-1459865264687-59');
+
 }
 /* .container {
   
@@ -97,4 +100,18 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+aside{
+  width: 50%;
+  padding-right: .5rem;
+  margin-right: .5rem;
+  font-style: italic;
+  color: white;
+}
+
+.player-name{
+  width: 90%;
+  border-radius: 20%;
+  /* -image: url('https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c29jY2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60'); */
 }

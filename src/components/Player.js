@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from 'react-router-dom'
 import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 
@@ -27,7 +26,8 @@ function Player (props){
     return(
         <section>  
             <div className ="home username">
-                <img src={players.image_path} alt={players.common_name}/>
+                <img src={players.image_path} alt={players.common_name} className="player-name"/>
+            </div>
                <aside>
                <p>First Name : {players.firstname}</p>
                <p>Full name : {players.fullname}</p>
@@ -39,7 +39,6 @@ function Player (props){
                <p>Nationality : {players.nationality}</p>
                <p>Weight : {players.weight}</p>
                </aside>
-            </div>
            
         </section>
     )
