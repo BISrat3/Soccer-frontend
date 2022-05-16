@@ -12,12 +12,12 @@ function App() {
   
     
   return (
-    <div >
+    <>
       <header>
         <h1 className="soccer"> Soccer Player App
+      <Header />
         </h1>
       </header>
-      <Header />
       {/* <Main />   */}
       <div>
       <Routes>
@@ -26,7 +26,7 @@ function App() {
       </Routes>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

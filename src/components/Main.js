@@ -37,7 +37,7 @@ function Main (props){
         </div>
     )
  }
-    return players ? loaded() : <h1> can't find the player</h1>
+    return players ? loaded() : <h1> We can't find a player</h1>
 }
 
 export default Main
