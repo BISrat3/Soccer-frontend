@@ -1,5 +1,6 @@
 import React from "react";
 import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 
 
 function Main (props){
@@ -13,7 +14,7 @@ function Main (props){
     // const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
+    const URL ="https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
     useEffect(()=>{
       const getPlayer = async()=>{
           const response = await fetch(URL)
@@ -33,17 +34,20 @@ function Main (props){
 //         console.log(players.fullname)
 //       </div>
 //   ))
- const loaded =() =>{
+const loaded =() =>{
     return (
-        <section>
-               
+        <section>  
             <div className ="home username">
-                {players.map((ele) =>{
-                    return <div ><p>Name : - {ele.fullname}</p> 
-                    <img src={ele.image_path} alt={ele.common_name}/>
-                    </div>
-            })}   
-            <p>Nationality : - {players.nationality}</p>
+                {players.map((ele, id) =>{
+                    return <div className ="container" key={id}>
+                        <Link to ={`${id}`} className='link'>
+                        <h3>Name : {ele.fullname}</h3> 
+                        <img src={ele.image_path} alt={ele.common_name}/>
+                        </Link>
+            </div>
+           
+                    })}   
+            {/* <p>Nationality : - {players.nationality}</p> */}
             
             {/* <img src={players.image_path} alt={players.common_name}/>
                 <br /> */}
@@ -52,7 +56,6 @@ function Main (props){
             <img src={players.img} alt={players.first_name}/>  */}
         </div>
         </section>
-        
     )
  }
     return players ? loaded() : <h1> We can't find a player</h1>
