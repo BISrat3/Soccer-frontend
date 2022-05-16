@@ -12,7 +12,8 @@ function Main (props){
     // const URL="https://app.sportdataapi.com/api/v1/soccer/players?apikey=6e4fc2a0-d262-11ec-a070-4d8b7854f793"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
     // const URL ="https://soccer.sportmonks.com/api/v2.0/players"
-    const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
+    // const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
+    const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ&per_page=40"
     useEffect(()=>{
       const getPlayer = async()=>{
           const response = await fetch(URL)
@@ -20,21 +21,38 @@ function Main (props){
           setPlayers(data.data)
           console.log(data)
           console.log(data.data)
+          console.log(data.data.fullname)
       }
       getPlayer()
-  },[])
-   
+      
+  },[]) 
+
+//   const mapping = players.map((ele, id) => (
+//       <div className="play" key={id}>
+//         <p className ="home username">Name : - {ele.players.fullname}</p>
+//         console.log(players.fullname)
+//       </div>
+//   ))
  const loaded =() =>{
     return (
-        <div className ="home username">
-            <p>Name : - {players.common_name}</p>
+        <section>
+               
+            <div className ="home username">
+                {players.map((ele) =>{
+                    return <div ><p>Name : - {ele.fullname}</p> 
+                    <img src={ele.image_path} alt={ele.common_name}/>
+                    </div>
+            })}   
             <p>Nationality : - {players.nationality}</p>
-             <img src={players.image_path} alt={players.common_name}/>
-                <br />
+            
+            {/* <img src={players.image_path} alt={players.common_name}/>
+                <br /> */}
                 {/* <h2>{players.first_name}</h2>
             <h2>Hello</h2>
             <img src={players.img} alt={players.first_name}/>  */}
         </div>
+        </section>
+        
     )
  }
     return players ? loaded() : <h1> We can't find a player</h1>

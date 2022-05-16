@@ -4,7 +4,7 @@ import '../App.css'
 function Footer(){
     return(
         <footer className="footer">
-            <span> © All right reserved| Player Profile-App| By: Bisrat</span>
+            <span> © All right reserved| Player Profile-App By: Bisrat</span>
         </footer>
     ) 
 }
