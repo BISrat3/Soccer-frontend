@@ -15,7 +15,7 @@ function Main (props){
           const response = await fetch(URL)
           const data = await response.json()
           setPlayers(data.data)
-        //   console.log(data)
+          console.log(data)
         //   console.log(data.data)
       }
       getPlayer()
@@ -34,10 +34,10 @@ const loaded =() =>{
                 {players.map((play, idx) =>{
                     return <div className="column"  >
                         <Link to ={`/players/${play.player_id}`} >
-                            <h3 className ="index" key={idx} >Name : {play.fullname}</h3> 
-                        
+                            <h3 className ="index" key={idx} >Name : {play.fullname} 
+                        <img src={play.image_path} alt={play.common_name} /></h3>
                         </Link>
-                        <img src={play.image_path} alt={play.common_name} />
+                        
                         </div>
            
             })}   
