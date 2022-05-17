@@ -26,7 +26,7 @@ function SearchController(){
         function inputChange(e){
             // console.log(e.value)
         setSearch(e.target.value)
-        console.log(e.target.value)
+        // console.log(e.target.value)
     }
     return(
         <>

@@ -9,7 +9,6 @@ function Search (props){
     // console.log(props)
     return(
         <section>
-            
             <Form  className="d-flex" onSubmit={ (e)=> props.handleSubmit(e)} >
         {/* <FormControl type="search" placeholder="Search...."  className="me-2"
           aria-label="Search" onInput={ ()=>{

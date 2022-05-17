@@ -34,7 +34,7 @@ const loaded =() =>{
             <div className ="home username">
                 {players.map((play, idx) =>{
                     return <div className ="container" key={idx}>
-                        <Link to ={`/${play.player_id}`} className='link'>
+                        <Link to ={`/players/${play.player_id}`} className='link'>
                         <h3>Name : {play.fullname}</h3> 
                         </Link>
                         <img src={play.image_path} alt={play.common_name}/>
