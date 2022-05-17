@@ -1,9 +1,11 @@
 import { useState } from "react"
 import Search from './Search'
 import Results from "./Results"
+// require('dotenv').config()
 
 function SearchController(){
-    const [search, setSearch] =useState([])
+    const [search, setSearch] = useState([])
+    console.log(search)
     const [results, setResults] = useState([])
 
     async function handleSubmit(e){
@@ -11,12 +13,14 @@ function SearchController(){
         console.log(e)
         try{
             console.log('check players')
-            const api_token='8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ'
-            const URL =`https://soccer.sportmonks.com/api/v2.0/players/search/${search}?${api_token}&per_page=20`
+            // const api_token=process.env.local.api_token
+            const api_token='5uXlEAuZwxblQvG9QRSzGsK6ymw62tdTnwTBkirCkr9DgUrxYV2XFd4QMrMw'
+            const URL =`https://soccer.sportmonks.com/api/v2.0/players/search/${search}'?api_token=${api_token}&count=10`
             const res = await fetch(URL)
             const data = await res.json()
-            console.log(data.data)
-            setResults(data.data.data)
+            console.log('hello')
+            console.log(data)
+            setResults(data.data)
             console.log(data.data)
         }
         catch(err){
@@ -29,10 +33,15 @@ function SearchController(){
         console.log(e.target.value)
     }
     return(
-        <>
-            <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search}/>
-            <Results results={results} />
-        </>
+        <div>
+            <>
+            <div >
+                <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search}/>
+            </div>
+                <Results results={results} />
+            </>
+        </div>
     )
+       
 }
 export default SearchController

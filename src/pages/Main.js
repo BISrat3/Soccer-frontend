@@ -11,7 +11,7 @@ function Main (props){
     useEffect(()=>{
         const getPlayer = async()=>{
         const api_token='8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ'
-          const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${api_token}&per_page=40`
+          const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${api_token}&per_page=20`
           const response = await fetch(URL)
           const data = await response.json()
           setPlayers(data.data)
@@ -30,26 +30,20 @@ function Main (props){
 //   ))
 const loaded =() =>{
     return (
-        <section>  
-            <div className ="home username">
+            <div className ="container">
                 {players.map((play, idx) =>{
-                    return <div className ="container" key={idx}>
-                        <Link to ={`/players/${play.player_id}`} className='link'>
-                        <h3>Name : {play.fullname}</h3> 
+                    return <div className="column"  >
+                        <Link to ={`/players/${play.player_id}`} >
+                            <h3 className ="index" key={idx} >Name : {play.fullname}</h3> 
+                        
                         </Link>
-                        <img src={play.image_path} alt={play.common_name}/>
-            </div>
+                        <img src={play.image_path} alt={play.common_name} />
+                        </div>
            
-                    })}   
-            {/* <p>Nationality : - {players.nationality}</p> */}
-            
-            {/* <img src={players.image_path} alt={players.common_name}/>
-                <br /> */}
-                {/* <h2>{players.first_name}</h2>
-            <h2>Hello</h2>
-            <img src={players.img} alt={players.first_name}/>  */}
+            })}   
         </div>
-        </section>
+       
+        
     )
  }
     return players ? loaded() : <h1> We can't find a player</h1>

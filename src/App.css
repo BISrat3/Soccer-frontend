@@ -17,6 +17,7 @@ body{
 .link{
   text-decoration: none;
   color:skyblue;
+  width: 50px;
 }
 /* .player{
   font-size: 40px;
@@ -55,8 +56,8 @@ h1{
 }
 img{
   background-color: white;
-  width: 50%;
   border-radius: 20%;
+  width: 100px;
   background-image: url('https://images.unsplash.com/photo-1459865264687-59');
 
 }
@@ -88,18 +89,37 @@ img{
 }
 
 .home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: white;
-    width: 400px;
     background-color: green;
     border: 5px solid yellow;
     border-radius: 10px;
     margin: 10px;
 }
 
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > a{
+  color:white;
+}
+
+h3{
+  margin: 0px;
+  width:120px;
 }
 
 aside{
@@ -125,4 +145,8 @@ aside{
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+.search p{
+  color: white;
 }

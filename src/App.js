@@ -23,13 +23,13 @@ function App() {
       {/* <Search /> */}
       <SearchController />
       {/* <Main />   */}
-    <div >
+  
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/players/:id" element={<Player players={players}/>}/>
-          <Route path="/players/search/" element={<SearchController />}/>
+          <Route path="/players/search/" element={<SearchController players={players} />}/>
       </Routes>
-      </div>
+  
       <br/>
       <br/>
       <Footer />
