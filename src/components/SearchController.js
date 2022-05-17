@@ -12,12 +12,12 @@ function SearchController(){
         try{
             console.log('check players')
             const api_token='8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ'
-            const URL =`https://soccer.sportmonks.com/api/v2.0/players/search/${search}?api_token=${api_token}&per_page=40`
+            const URL =`https://soccer.sportmonks.com/api/v2.0/players/search/${search}?${api_token}&per_page=20`
             const res = await fetch(URL)
             const data = await res.json()
             console.log(data.data)
             setResults(data.data.data)
-            console.log(data.data.data)
+            console.log(data.data)
         }
         catch(err){
             console.log(err)
@@ -26,7 +26,7 @@ function SearchController(){
         function inputChange(e){
             // console.log(e.value)
         setSearch(e.target.value)
-        // console.log(e.target.value)
+        console.log(e.target.value)
     }
     return(
         <>

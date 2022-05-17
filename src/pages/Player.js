@@ -39,7 +39,6 @@ function Player (props){
                <p>Nationality : {players.nationality}</p>
                <p>Weight : {players.weight}</p>
                </aside>
-           
         </section>
     )
        

@@ -3,8 +3,8 @@ import './App.css'
 import {  Route, Routes} from 'react-router-dom'
 import {useState} from 'react'
 import Header from './components/Header'
-import Main from './components/Main';
-import Player from './components/Player';
+import Main from './pages/Main';
+import Player from './pages/Player';
 import Footer from './components/Footer'
 import Search from './components/Search'
 import Results from './components/Results'
@@ -13,7 +13,6 @@ import SearchController from './components/SearchController'
 function App() {
   const [players, setPlayer] = useState(null)
   
-    
   return (
     <>
       <header>
@@ -21,15 +20,18 @@ function App() {
       <Header />
         </h1>
       </header>
+      {/* <Search /> */}
       <SearchController />
       {/* <Main />   */}
-      <div>
+    <div >
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/players/:id" element={<Player players={players}/>}/>
-          <Route path="/search" element={<SearchController />}/>
+          <Route path="/players/search/" element={<SearchController />}/>
       </Routes>
       </div>
+      <br/>
+      <br/>
       <Footer />
     </>
   );

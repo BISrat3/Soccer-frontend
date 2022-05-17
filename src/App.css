@@ -99,7 +99,7 @@ img{
 .container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:stretch;
 }
 
 aside{
@@ -113,10 +113,16 @@ aside{
 .player-name{
   width: 90%;
   border-radius: 20%;
-  /* -image: url('https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c29jY2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60'); */
 }
 
 .white{
   color: white;
   text-align: center;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
