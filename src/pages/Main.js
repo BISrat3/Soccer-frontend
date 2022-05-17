@@ -1,7 +1,6 @@
 import React from "react";
 import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
-import Search from "../components/Search"
 import SearchController from "../components/SearchController";
 
 function Main (props){
@@ -34,12 +33,12 @@ const loaded =() =>{
             <SearchController />
             <div className ="container">
                 {players.map((play, idx) =>{
-                    return <div className="column"  >
-                        <Link to ={`/players/${play.player_id}`} >
+                    return <div                 className="column"  >
+                        <Link to ={`/players/${play.player_id}`} className='Link' >
                             <h3 className ="index" key={idx} > {play.fullname} 
-                            <img src={play.image_path} alt={play.common_name} /></h3>
+                            <img src={play.image_path} alt={play.common_name} className="image-player"/></h3>
                         </Link>
-                        </div>
+                    </div>
             })}   
             </div>
        </>

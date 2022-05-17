@@ -8,16 +8,14 @@ body{
   font-family: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 }
 
-.nav{
+/* .nav{
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-}
+} */
 
-.link{
+.Link{
   text-decoration: none;
-  color:skyblue;
-  width: 50px;
 }
 /* .player{
   font-size: 40px;
@@ -39,7 +37,7 @@ body{
 .footer{
   color: black;
   font-size: 20px;
-  background-color:lightskyblue;
+  background-color:lightseagreen;
   text-align: center;
   width: 100%;
   bottom:0;
@@ -107,19 +105,44 @@ h1{
   flex-direction: column;
   align-items: center;
   border-radius: 50px solid white;
+  text-decoration: none;
 }
 
+.column h3{
+  text-align: center;
+  text-decoration: none;
+}
 .index {
   width: 200px;
   color: white;
   font-size: 15px;
   text-decoration: none;
   background-color:green;
-  border: 5px solid black;
-  border-radius: 10px;
+  border: 2px solid yellow;
+  border-radius: 15px;
   margin: 15px;
 }
 
+.search p{
+  color: white;
+}
+
+.me-auto{
+  font-size: 30px;
+}
+
+.search{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ /* .d-flex{
+  height: 50px;
+} */
+
+.form .btn{
+  font-size: 30px;
+} 
 .container > a{
   color:white;
 
@@ -131,11 +154,20 @@ h3{
   text-decoration: none;
 }
 
-img{
-  background-color: khaki;
+.image-player{
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 60px;
+  display: block;
+  background-image: ;
+}
+
+img{
+ 
+  background-color: khaki;
+  
   width: 150px;
-  position: center;
+
   /* background-image: url('https://images.unsplash.com/photo-1459865264687-59'); */
 }
 
@@ -152,11 +184,11 @@ aside{
   border-radius: 20%;
 }
 
-.d-flex{
+/* .d-flex{
   display: flex;
   justify-content: center;
   margin: 0;
-}
+} */
 
 .form-control{
   cursor: pointer;
@@ -165,11 +197,4 @@ aside{
 .white{
   color: white;
   text-align: center;
-}
-.search p{
-  color: white;
-}
-
-.me-auto{
-  font-size: 30px;
 }

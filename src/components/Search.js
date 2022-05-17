@@ -8,19 +8,23 @@ import { Link } from "react-router-dom"
 function Search (props){
     // console.log(props)
     return(
-        <Form className="d-flex" >
-        {/* <FormControl type="search" placeholder="Search...."  className="me-2"
-          aria-label="Search" onInput={ ()=>{
-              {props.inputChange}
-            } /> */}
-            <FormControl type="text" placeholder="Search..." onInput= {
+        <div className="search form">
+            <Form className="d-flex" >
+            <FormControl
+                type="search" onInput={props.inputChange} 
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+             required value={props.search}/>
+            {/* <input type="text" placeholder="Search..." onInput= {
                 props.inputChange} 
-                className="form-control input" value={props.search} required/>
+                className="form-control input" value={props.search} /> */}
             <Link to="/players/search/">
                 <br />
-            <Button  onClick={props.handleSubmit} variant="outline-success">Search</Button>
+            <Button  onClick={props.handleSubmit} variant="outline-success" className="btn">Search</Button>
             </Link>
-      </Form>
+            </Form>
+        </div>   
     )
 }
 
