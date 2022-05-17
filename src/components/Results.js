@@ -5,17 +5,20 @@ function Results (props){
         return(
             <div className ="container">
                 <Link to={`/players/${profile.player_id}/`}>
-                <p className='username'> {profile.firstname}
-                <img src={profile.image_path} alt={profile.common_name} key={idx} className="player-name"/>
-                </p></Link>
+                    <div className="column">
+                    <h3 className ="index">{profile.common_name}
+                    <img src={profile.image_path} alt={profile.common_name} key={idx} className="player-name" />
+                    </h3> 
+                    </div>
+                </Link>
             </div>
             )        
         }
     )
     return(
-        <div>
+        <>
         {ShowPlayer}
-        </div>
+        </>
     )
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
-
+import Search from "../components/Search"
+import SearchController from "../components/SearchController";
 
 function Main (props){
     // console.log(props.players)
@@ -10,12 +11,11 @@ function Main (props){
     
     useEffect(()=>{
         const getPlayer = async()=>{
-        const api_token='8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ'
-          const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${api_token}&per_page=20`
-          const response = await fetch(URL)
-          const data = await response.json()
-          setPlayers(data.data)
-          console.log(data)
+        const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${process.env.REACT_APP_API_TOKEN}&per_page=20`
+        const response = await fetch(URL)
+        const data = await response.json()
+        setPlayers(data.data)
+        console.log(data)
         //   console.log(data.data)
       }
       getPlayer()
@@ -30,19 +30,20 @@ function Main (props){
 //   ))
 const loaded =() =>{
     return (
+        <>
+            <SearchController />
             <div className ="container">
                 {players.map((play, idx) =>{
                     return <div className="column"  >
                         <Link to ={`/players/${play.player_id}`} >
-                            <h3 className ="index" key={idx} >Name : {play.fullname} 
-                        <img src={play.image_path} alt={play.common_name} /></h3>
+                            <h3 className ="index" key={idx} > {play.fullname} 
+                            <img src={play.image_path} alt={play.common_name} /></h3>
                         </Link>
-                        
                         </div>
-           
             })}   
-        </div>
-       
+            </div>
+       </>
+            
         
     )
  }

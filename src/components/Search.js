@@ -13,11 +13,11 @@ function Search (props){
           aria-label="Search" onInput={ ()=>{
               {props.inputChange}
             } /> */}
-            <input type="text" placeholder="Search..." onInput= {
+            <FormControl type="text" placeholder="Search..." onInput= {
                 props.inputChange} 
-            className="form-control input" value={props.search}/>
-                <br />
+                className="form-control input" value={props.search} required/>
             <Link to="/players/search/">
+                <br />
             <Button  onClick={props.handleSubmit} variant="outline-success">Search</Button>
             </Link>
       </Form>

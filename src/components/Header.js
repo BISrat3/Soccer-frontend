@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom'
+import  { Nav} from 'react-bootstrap'
+import { Navbar } from 'react-bootstrap'
 
 function Header(props){
     return (
-        <nav className='nav player'>
-            <Link to='/' className='link'>Home</Link>  
-            <Link to='/' className='link'>Players</Link>
-        </nav>
+         <Navbar bg="success" variant="dark">
+            <Nav className="me-auto">
+            <Nav.Link href="/" className="me-auto">Home</Nav.Link> 
+            <Nav.Link href="/players/search">Players</Nav.Link>
+         </Nav>
+       </Navbar>
     )
 }
 

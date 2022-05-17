@@ -152,18 +152,24 @@ aside{
   border-radius: 20%;
 }
 
+.d-flex{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.form-control{
+  cursor: pointer;
+}
+
 .white{
   color: white;
   text-align: center;
 }
-
-.d-flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
 .search p{
   color: white;
+}
+
+.me-auto{
+  font-size: 30px;
 }
