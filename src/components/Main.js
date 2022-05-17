@@ -7,24 +7,16 @@ function Main (props){
     // console.log(props.players)
     // const [player, setPlayer] = useState(null)
     const [players, setPlayers] = useState(null)
-    // const URL ="https://soccer.sportmonks.com/api/v2.0/players/?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    // const URL="https://ghibliapi.herokuapp.com/films"
-    // const URL="https://soccer.sportmonks.com/api/v2.0/players/172104?apikey=6e4fc2a0-d262-11ec-a070-4d8b7854f793&country_id=48&max_age=30"
-    // const URL="https://app.sportdataapi.com/api/v1/soccer/players?apikey=6e4fc2a0-d262-11ec-a070-4d8b7854f793"
-    // const URL ="https://soccer.sportmonks.com/api/v2.0/countries/320/players?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    // const URL ="https://soccer.sportmonks.com/api/v2.0/players"
-    // const URL ="https://soccer.sportmonks.com/api/v2.0/players/172104?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ"
-    const URL = "https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=brsJpdakUhZMVm70nhAorHMNKCvuuOlDULXFk29tToCtRKfbjI0qiHivNm42&per_page=40"
     
     useEffect(()=>{
-      const getPlayer = async()=>{
+        const getPlayer = async()=>{
+        const api_token='8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ'
+          const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${api_token}&per_page=40`
           const response = await fetch(URL)
           const data = await response.json()
           setPlayers(data.data)
-          console.log(data)
-          console.log(data.data)
-          console.log(data.data.fullname)
-
+        //   console.log(data)
+        //   console.log(data.data)
       }
       getPlayer()
       

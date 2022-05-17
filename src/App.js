@@ -7,6 +7,8 @@ import Main from './components/Main';
 import Player from './components/Player';
 import Footer from './components/Footer'
 import Search from './components/Search'
+import Results from './components/Results'
+import SearchController from './components/SearchController'
 
 function App() {
   const [players, setPlayer] = useState(null)
@@ -19,12 +21,13 @@ function App() {
       <Header />
         </h1>
       </header>
-      <Search/>
+      <SearchController />
       {/* <Main />   */}
       <div>
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/:id" element={<Player players={players}/>}/>
+          <Route path="/search" element={<SearchController />}/>
       </Routes>
       </div>
       <Footer />
