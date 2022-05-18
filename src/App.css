@@ -136,6 +136,11 @@ h1{
     text-decoration: none;
     color:blue;
   }
+
+  form{
+    margin-right: 20px;
+  }
+
   .index {
     width: 200px;
     color: white;
@@ -220,11 +225,17 @@ h1{
   
 .foot{
   bottom: 0;
-  position: fixed;
-  width: 100%;
-  /* margin-top: 2rem; */
 }
 
-.foot > MDBFooter{
-  padding-top: -5%;
+.foot .showPlayer{
+  bottom: 0;
+  padding-top: 40px;
+  margin-top: 20px;
+  position: fixed;
+  width: 100%;
+  margin-top: -200px;
+}
+
+.insert{
+  margin-bottom: 140px;
 }

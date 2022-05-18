@@ -1,7 +1,6 @@
 import { useState } from "react"
 import Search from './Search'
 import Results from "./Results"
-import {Link} from 'react-router-dom';
 // require('dotenv').config()
 
 function SearchController(props){

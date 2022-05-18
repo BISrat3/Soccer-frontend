@@ -5,6 +5,7 @@ import '../App.css'
 
 function Footer(){
     return(
+        <div className='showPlayer'>
         <MDBFooter className='bg-dark text-center text-white footer' bgColor='#00695c'>
             <MDBContainer className='p-4 pb-0' bgColor='#00695c'>
             <section className='mb-6'>
@@ -41,6 +42,7 @@ function Footer(){
       </div>
       </MDBContainer>
     </MDBFooter>
+    </div>
 
     //     <footer >
     //         <span> © All right reserved| Player Profile-App By: Bisrat</span>

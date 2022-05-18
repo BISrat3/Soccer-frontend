@@ -1,9 +1,5 @@
 import React from "react"
-import {useState, useEffect} from 'react'
 import SearchController from "../components/SearchController"
-import Search from "../components/Search"
-import Results from "../components/Results"
-import {Link} from 'react-router-dom'
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
@@ -29,7 +25,10 @@ function PlayersSearch(props){
                     <h1 className="soccer"> Soccer Player App</h1>             
                 </header>
                     <SearchController />
-                <div className="foot">
+                <div className ="container insert ">
+                    <h3>Please Click your player to see the profile</h3>
+                </div>
+                <div className ="foot">
                     <Footer />
                 </div>
             </>  

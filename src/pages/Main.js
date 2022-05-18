@@ -2,7 +2,6 @@ import React from "react";
 import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import SearchController from "../components/SearchController";
-import PlayersSearch from "./PlayersSearch";
 import Header from "../components/Header";
 import Footer from '../components/Footer';
 
