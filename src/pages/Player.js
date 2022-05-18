@@ -9,7 +9,7 @@ function Player (props){
     // console.log(id)
     // let player= props.players[id]
     const [players, setPlayers] = useState('')
-    const URL=`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=8J5v8UPD2G3nCu6yZUOYNCkxMX8SzUJ9GRFCGXhcIEufeQoBkyhkPKapzuzJ`
+    const URL=`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=${process.env.REACT_APP_API_TOKEN}`
     
     useEffect(()=>{
         const getPlayer = async()=>{
