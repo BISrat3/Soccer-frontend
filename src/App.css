@@ -239,3 +239,7 @@ h1{
 .insert{
   margin-bottom: 140px;
 }
+
+.hidden{
+  display: none;
+}

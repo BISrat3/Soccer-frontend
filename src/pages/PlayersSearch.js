@@ -25,15 +25,14 @@ function PlayersSearch(props){
                     <h1 className="soccer"> Soccer Player App</h1>             
                 </header>
                     <SearchController />
-                <div className ="container insert ">
-                    <h3>Please Click your player to see the profile</h3>
+                <div className ="container insert">
+                    <h3 className="hidden">Please Search your player to see the profile</h3>
                 </div>
                 <div className ="foot">
                     <Footer />
                 </div>
             </>  
         )
-        
 }
 
 export default PlayersSearch

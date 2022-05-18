@@ -44,7 +44,7 @@ function SearchController(props){
         return(
            <>
                 {/* <Link to={`/players/search/${props.fullname}`}> */}
-               <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search} />
+               <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search}/>
                <Results results={results} />
                 {/* </Link> */}
            </>

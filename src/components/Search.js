@@ -8,18 +8,18 @@ function Search (props){
     // console.log(props)
     return(
         <div className="search form">
-            <Form className="d-flex">
+            <Form className="d-flex ">
             <FormControl
                 type="search" onInput={props.inputChange} 
                 placeholder="Search"
                 className="me-2"
-                aria-label="Search"
-             required value={props.search}/> 
+                aria-label="Search hidden"
+             required value={props.search} /> 
             {/* <input type="text" placeholder="Search..." onInput= {
                 props.inputChange} 
                 className="form-control input" value={props.search} /> */}
                 {/* <Link to={`/players/search/${props.search.fullname}`}> */}
-                    <Button onClick={props.handleSubmit} variant="outline-success" className="btn">Search</Button>
+                    <Button onClick={props.handleSubmit} variant="outline-success" className="btn hidden">Search</Button>
                 {/* </Link> */}
             </Form>
         </div>   
