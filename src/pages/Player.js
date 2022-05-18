@@ -1,6 +1,8 @@
 import React from "react"
 import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 function Player (props){
     // console.log(props)
@@ -25,6 +27,11 @@ function Player (props){
   
     return(
         <>  
+            <div>
+                <Header />
+                <header>
+                <h1 className="soccer"> Soccer Player App</h1>              </header>
+            </div>
             <div className="player-container">
             <div className ="show column">
                 <img src={players.image_path} alt={players.common_name} className="single-img player"/>
@@ -41,6 +48,9 @@ function Player (props){
                <p><strong>Weight </strong>  : {players.weight}</p>
             </div>
             </div>
+        <div>
+            <Footer />
+        </div>
         </>
     )
        

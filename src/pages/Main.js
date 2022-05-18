@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import SearchController from "../components/SearchController";
 import PlayersSearch from "./PlayersSearch";
+import Header from "../components/Header";
+import Footer from '../components/Footer';
 
 function Main (props){
     // console.log(props.players)
@@ -31,7 +33,12 @@ function Main (props){
 const loaded =() =>{
     return (
         <>  
-            <PlayersSearch />
+            <div>
+                <Header />
+                <header>
+                <h1 className="soccer"> Soccer Player App</h1>              </header>
+            </div>
+            <SearchController/>
             <div className ="container">
                 {players.map((play, idx) =>{
                     return <div className="column"  >
@@ -42,6 +49,9 @@ const loaded =() =>{
                     </div>
             })}   
             </div>
+        <div>
+            <Footer />
+        </div>
        </>  
     )
  }
