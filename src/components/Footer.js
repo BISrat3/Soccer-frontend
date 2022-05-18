@@ -42,7 +42,7 @@ function Footer(){
       </MDBContainer>
     </MDBFooter>
 
-    //     <footer className="footer">
+    //     <footer >
     //         <span> © All right reserved| Player Profile-App By: Bisrat</span>
     //     </footer>
     // 

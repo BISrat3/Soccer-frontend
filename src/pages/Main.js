@@ -30,7 +30,7 @@ function Main (props){
 //   ))
 const loaded =() =>{
     return (
-        <>
+        <>  
             <PlayersSearch />
             <div className ="container">
                 {players.map((play, idx) =>{

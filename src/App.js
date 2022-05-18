@@ -21,12 +21,12 @@ function App() {
       </header>
       {/* <Search /> */}
       {/* <SearchController /> */}
-        {/* <PlayersSearch/>   */}
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/players/:id" element={<Player players={players}/>}/>
-          <Route path="/players/search" element={<PlayersSearch players={players} />}/>
+          <Route path="/players/search/" element={<PlayersSearch players={players} />}/>
       </Routes>
+        {/* <PlayersSearch/>   */}
       {/* <playerSearch/> */}
       <Footer />
     </>

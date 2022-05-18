@@ -1,9 +1,10 @@
 import { useState } from "react"
 import Search from './Search'
 import Results from "./Results"
+import {Link} from 'react-router-dom';
 // require('dotenv').config()
 
-function SearchController(){
+function SearchController(props){
     let [search, setSearch] = useState([])
     // console.log(search)
     let [results, setResults] = useState([])
@@ -43,8 +44,10 @@ function SearchController(){
         }
         return(
            <>
-               <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search}/>
+                {/* <Link to={`/players/search/${props.fullname}`}> */}
+               <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search} />
                <Results results={results} />
+                {/* </Link> */}
            </>
         ) 
 }
