@@ -5,7 +5,7 @@ import '../App.css'
 
 function Footer(){
     return(
-        <MDBFooter className='bg-dark text-center text-white' bgColor='#00695c'>
+        <MDBFooter className='bg-dark text-center text-white footer' bgColor='#00695c'>
             <MDBContainer className='p-4 pb-0' bgColor='#00695c'>
             <section className='mb-6'>
                 <a className='btn btn-outline-light btn-floating m-1' href='https://www.facebook.com/' role='button'>

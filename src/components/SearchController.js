@@ -43,12 +43,9 @@ function SearchController(){
         }
         return(
            <>
-           <div >
                <Search handleSubmit={handleSubmit} inputChange={inputChange} search={search}/>
-           </div>
                <Results results={results} />
            </>
-      
         ) 
-        }
-        export default SearchController
+}
+export default SearchController

@@ -2,6 +2,7 @@ import React from "react";
 import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import SearchController from "../components/SearchController";
+import PlayersSearch from "./PlayersSearch";
 
 function Main (props){
     // console.log(props.players)
@@ -30,7 +31,7 @@ function Main (props){
 const loaded =() =>{
     return (
         <>
-            <SearchController />
+            <PlayersSearch />
             <div className ="container">
                 {players.map((play, idx) =>{
                     return <div className="column"  >
@@ -41,9 +42,7 @@ const loaded =() =>{
                     </div>
             })}   
             </div>
-       </>
-            
-        
+       </>  
     )
  }
     return players ? loaded() : <h1> We can't find a player</h1>

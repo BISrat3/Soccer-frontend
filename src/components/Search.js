@@ -20,7 +20,7 @@ function Search (props){
                 props.inputChange} 
                 className="form-control input" value={props.search} /> */}
             <Link to="/players/search/">
-                <br />
+
             <Button  onClick={props.handleSubmit} variant="outline-success" className="btn">Search</Button>
             </Link>
             </Form>

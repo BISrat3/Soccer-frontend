@@ -5,8 +5,9 @@ import {useState} from 'react'
 import Header from './components/Header'
 import Main from './pages/Main';
 import Player from './pages/Player';
+import PlayersSearch from './pages/PlayersSearch'
 import Footer from './components/Footer'
-import SearchController from './components/SearchController'
+import Search from './components/Search'
 
 function App() {
   const [players, setPlayer] = useState(null)
@@ -20,16 +21,13 @@ function App() {
       </header>
       {/* <Search /> */}
       {/* <SearchController /> */}
-      {/* <Main />   */}
-      <div>
+        {/* <PlayersSearch/>   */}
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/players/:id" element={<Player players={players}/>}/>
-          <Route path="/players/search/" element={<SearchController players={players} />}/>
+          <Route path="/players/search" element={<PlayersSearch players={players} />}/>
       </Routes>
-      <br/>
-      <br/>
-      </div>
+      {/* <playerSearch/> */}
       <Footer />
     </>
   );
