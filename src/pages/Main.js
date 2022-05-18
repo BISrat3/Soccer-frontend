@@ -33,7 +33,7 @@ const loaded =() =>{
             <SearchController />
             <div className ="container">
                 {players.map((play, idx) =>{
-                    return <div                 className="column"  >
+                    return <div className="column"  >
                         <Link to ={`/players/${play.player_id}`} className='Link' >
                             <h3 className ="index" key={idx} > {play.fullname} 
                             <img src={play.image_path} alt={play.common_name} className="image-player"/></h3>

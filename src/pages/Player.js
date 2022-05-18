@@ -24,22 +24,24 @@ function Player (props){
     },[]) 
   
     return(
-        <section>  
-            <div className ="home username">
-                <img src={players.image_path} alt={players.common_name} className="player-name"/>
+        <>  
+            <div className="player-container">
+            <div className ="show column">
+                <img src={players.image_path} alt={players.common_name} className="single-img player"/>
             </div>
-               <aside>
-               <p>First Name : {players.firstname}</p>
-               <p>Full name : {players.fullname}</p>
-               <p>Name : {players.common_name}</p>
-               <p>Birth Country : {players.birthcountry}</p>
-               <p>Birth Date : {players.birthdate}</p>
-               <p>Display Name : {players.display_name}</p>
-               <p>Height : {players.height}</p>
-               <p>Nationality : {players.nationality}</p>
-               <p>Weight : {players.weight}</p>
-               </aside>
-        </section>
+            <div className="aside">
+               <p><strong> First Name </strong> : {players.firstname}</p>
+               <p><strong>Full name </strong> : {players.fullname}</p>
+               <p><strong>Name </strong>  : {players.common_name}</p>
+               <p><strong>Birth Country </strong>  : {players.birthcountry}</p>
+               <p><strong>Birth Date  </strong> : {players.birthdate}</p>
+               <p><strong>Display Name </strong>  : {players.display_name}</p>
+               <p><strong>Height </strong> : {players.height}</p>
+               <p><strong>Nationality </strong>  : {players.nationality}</p>
+               <p><strong>Weight </strong>  : {players.weight}</p>
+            </div>
+            </div>
+        </>
     )
        
 }
