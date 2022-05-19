@@ -29,5 +29,16 @@ In the project directory, you can run:
 ### Installation
 
 <ul> Application Usage
-    <li></li>
+    <li>Navigate to deploy web app</li>
+    <li>Search for players </li>
+    <li>See details for specific player </li>
+</ul>
+<ul> Contribution Usage
+    <li>Fork and Clone Repo to you local repository</li>
+    <li>Install dependencies (npm i)</li>
+    <li>env(API-Token)</li>
+    <li>Make pull request</li>
+</ul>
 
+### Contributor
+Bisrat Amtataw

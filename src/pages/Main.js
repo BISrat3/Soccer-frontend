@@ -46,7 +46,7 @@ function Main (props){
        </>  
     )
     }
-    return players ? loaded() : <h1> The Page is loading</h1>
+    return players ? loaded() : <h1> Loading</h1>
 }
 
 export default Main
