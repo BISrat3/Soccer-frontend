@@ -14,8 +14,6 @@ function Player (props){
             const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=${process.env.REACT_APP_API_TOKEN}`)
             const data = await response.json()
             setPlayers(data.data)
-            console.log(data)
-            console.log(data.data)
         }
         getPlayer()    
     },[]) 
@@ -52,7 +50,6 @@ function Player (props){
             </div>
         </>
     )
-       
 }
 
 export default Player

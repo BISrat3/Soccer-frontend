@@ -8,6 +8,7 @@ body{
   font-family: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 }
 
+/* ---Link all pages----- */
 .Link{
   text-decoration: none;
 }
@@ -38,17 +39,20 @@ body{
   
 }
 
+/* ----soccer font size---- */
 .soccer{
   font-size: 40px;
   color: yellow;
   text-align: center;
 }
 
+/* ---Nav -----  */
 .nav{
   font-size:20px;
   color: white;
 }
 
+/* ---H1----- */
 h1{
   font-size: 20px;
   color: yellow;
@@ -72,6 +76,14 @@ h1{
   border: 1px solid black;
 }
 
+/* --------Error Message------  */
+.error{
+  font-size: 30px;
+  text-align: center;
+  color: green;
+  border-radius: 1px solid white;
+}
+
 /* ----single player container ------ */
 .player-container{
   margin-top: 10px;
@@ -90,7 +102,6 @@ h1{
   margin-left: 20px;
   font-style: italic;
   color:brown;
-  /* color: rgba(rgb(255, 0, 85), rgb(25, 171, 25), rgb(72, 72, 123), alpha); */
 }
   
 /* ----- Profile details p Tags -----  */
@@ -145,17 +156,19 @@ strong{
   align-items: center;
 }
   
-
+/* ------form seach buttons-------- */
 form{
   margin-right: 20px;
 }
 
+/* -------columns---------- */
 .column h3{
   text-align: center;
   text-decoration: none;
   color: white;
   
 }
+
 /*------- h3 index for column div--- */
 h3 .index{
   padding-bottom: 10px;
@@ -163,6 +176,7 @@ h3 .index{
   text-decoration: none;
 }
 
+/* ------- all h3 tags----------- */
 h3{
   margin: 0px;
   font-size: 20px;
@@ -180,7 +194,8 @@ h3{
   border-radius: 15px;
   margin: 15px;
 }
-  
+
+/* ---------- search p tags----------  */
 .search p{
   color: white;
 }
@@ -197,10 +212,6 @@ h3{
 .form .btn{
   font-size: 30px;
 } 
-/* .container > a{
-  color:white;
-}
-   */
 
 /* ---- image for div------ */
 .image-player{
@@ -217,11 +228,13 @@ img{
   /* background-image: url('https://images.unsplash.com/photo-1459865264687-59'); */
 }
 
+/* --------- player name ---------- */
 .player-name{
   width: 90%;
   border-radius: 20%;
 }
 
+/* ------ form control-------- */
 .form-control{
   cursor: pointer;
 }
@@ -231,9 +244,6 @@ img{
   text-align: center;
 }
 
-.foot{
-  bottom: 0;
-}
 
 .foot .showPlayer{
   bottom: 0;
@@ -241,7 +251,6 @@ img{
   margin-top: 0px;
   position: fixed;
   width: 100%;
-  /* margin-top: 200px; */
 }
 
 .insert{
@@ -250,4 +259,8 @@ img{
 
 .hidden{
   display: none;
+}
+
+.foot{
+  bottom: 0;
 }
