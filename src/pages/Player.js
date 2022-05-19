@@ -9,18 +9,15 @@ function Player (props){
     let params = useParams()
     const playerId = params.id;
     
-    const URL=`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=${process.env.REACT_APP_API_TOKEN}`
-    
     useEffect(()=>{
         const getPlayer = async()=>{
-            const response = await fetch(URL)
+            const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=${process.env.REACT_APP_API_TOKEN}`)
             const data = await response.json()
             setPlayers(data.data)
             console.log(data)
             console.log(data.data)
         }
-        getPlayer()
-        
+        getPlayer()    
     },[]) 
   
     return(
