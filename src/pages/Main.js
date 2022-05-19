@@ -2,7 +2,7 @@ import React from "react";
 import {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import SearchController from "../components/SearchController";
-import Header from "../components/Header";
+import Header from "../components/Nav";
 import Footer from '../components/Footer';
 
 function Main (props){

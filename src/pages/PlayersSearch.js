@@ -1,6 +1,6 @@
 import React from "react"
 import SearchController from "../components/SearchController"
-import Header from "../components/Header"
+import Header from "../components/Nav"
 import Footer from "../components/Footer"
 
 function PlayersSearch(props){
