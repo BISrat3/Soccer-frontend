@@ -11,21 +11,11 @@ function App() {
   
   return (
     <>
-      {/* <Header />
-      <header>
-        <h1 className="soccer"> Soccer Player App
-        </h1>
-      </header> */}
-      {/* <Search /> */}
       <Routes>
           <Route path="/" element={<Main players={players} />} />
           <Route path="/players/:id" element={<Player players={players}/>}/>
           <Route path="/players/search/" element={<PlayersSearch players={players} />}/>
       </Routes>
-      {/* <SearchController /> */}
-        {/* <PlayersSearch/>   */}
-      {/* <playerSearch/> */}
-      {/* <Footer /> */}
     </>
   );
 }
