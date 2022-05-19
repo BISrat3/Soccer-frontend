@@ -33,7 +33,7 @@ function Main (props){
                 {players.map((play, idx) =>{
                     return <div className="column"  >
                         <Link to ={`/players/${play.player_id}`} className='Link' >
-                            <h3 className ="index" key={idx} > {play.fullname} <br /> <br />
+                            <h3 className ="index" key={idx} > {play.common_name} <br /> <br />
                             <img src={play.image_path} alt={play.common_name} className="image-player"/> 
                             </h3>
                         </Link>
