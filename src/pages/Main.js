@@ -35,7 +35,8 @@ const loaded =() =>{
             <div>
                 <Header />
                 <header>
-                <h1 className="soccer"> Soccer Player App</h1>              </header>
+                <h1 className="soccer"> Soccer Player App</h1>             
+                </header>
             </div>
             <SearchController/>
             <div className ="container">
@@ -54,7 +55,7 @@ const loaded =() =>{
        </>  
     )
  }
-    return players ? loaded() : <h1> We can't find a player</h1>
+    return players ? loaded() : <h1> The Page is loading</h1>
 }
 
 export default Main
