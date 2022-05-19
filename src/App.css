@@ -107,6 +107,10 @@ h1{
     width: 200px;
     margin: 30px 30px;
   }
+
+  .container :hover{
+    transform: scale(1.1);
+  }
   
   .column {
     display: flex;

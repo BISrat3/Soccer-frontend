@@ -6,29 +6,19 @@ import Header from "../components/Header";
 import Footer from '../components/Footer';
 
 function Main (props){
-    // console.log(props.players)
-    // const [player, setPlayer] = useState(null)
     const [players, setPlayers] = useState(null)
     
     useEffect(()=>{
         const getPlayer = async()=>{
-        const URL =`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${process.env.REACT_APP_API_TOKEN}&per_page=20`
-        const response = await fetch(URL)
+        const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${process.env.REACT_APP_API_TOKEN}&per_page=20`)
         const data = await response.json()
         setPlayers(data.data)
         console.log(data)
-        //   console.log(data.data)
       }
       getPlayer()
       
   },[]) 
 
-//   const mapping = players.map((ele, id) => (
-//       <div className="play" key={id}>
-//         <p className ="home username">Name : - {ele.players.fullname}</p>
-//         console.log(players.fullname)
-//       </div>
-//   ))
 const loaded =() =>{
     return (
         <>  
@@ -49,9 +39,9 @@ const loaded =() =>{
                     </div>
             })}   
             </div>
-        <div>
-            <Footer />
-        </div>
+             <div>
+                <Footer />
+             </div>
        </>  
     )
  }

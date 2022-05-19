@@ -5,12 +5,10 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 function Player (props){
-    // console.log(props)
+    const [players, setPlayers] = useState('')
     let params = useParams()
     const playerId = params.id;
-    // console.log(id)
-    // let player= props.players[id]
-    const [players, setPlayers] = useState('')
+    
     const URL=`https://soccer.sportmonks.com/api/v2.0/players/${playerId}?api_token=${process.env.REACT_APP_API_TOKEN}`
     
     useEffect(()=>{
@@ -30,7 +28,8 @@ function Player (props){
             <div>
                 <Header />
                 <header>
-                <h1 className="soccer"> Soccer Player App</h1>              </header>
+                    <h1 className="soccer"> Soccer Player App</h1>              
+                </header>
             </div>
             <div className="player-container">
             <div className ="show column">
@@ -48,9 +47,9 @@ function Player (props){
                <p><strong>Weight </strong>  : {players.weight}</p>
             </div>
             </div>
-        <div>
-            <Footer />
-        </div>
+             <div>
+                <Footer />
+            </div>
         </>
     )
        
