@@ -14,7 +14,7 @@ function Results (props){
     )})
     return(
         <>
-            {props.wrongResult ? (<h3 className ="error">Please enter the correct name</h3>) : (null) } 
+            {props.wrongResult ? (<h3 className ="error">Please type the correct name</h3>) : (null) } 
             <div className ="container">
                 {ShowPlayer}
             </div>

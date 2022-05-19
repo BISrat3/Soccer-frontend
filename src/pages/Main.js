@@ -13,7 +13,6 @@ function Main (props){
         const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/countries/17/players?api_token=${process.env.REACT_APP_API_TOKEN}&per_page=20`)
         const data = await response.json()
         setPlayers(data.data)
-        console.log(data)
       }
       getPlayer()
       
@@ -28,7 +27,7 @@ function Main (props){
                 <h1 className="soccer"> Soccer Player App</h1>             
                 </header>
             </div>
-            <SearchController/>
+            {/* <SearchController/> */}
             <div className ="container">
                 {players.map((play, idx) =>{
                     return <div className="column"  >

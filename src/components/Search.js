@@ -10,11 +10,9 @@ function Search (props){
         <div className="search form">
             <Form className="d-flex ">
             <FormControl type="search" onInput={props.inputChange} 
-                placeholder="Search" className="me-2" aria-label="Search hidden"
+                placeholder="please search a player name" className="me-2" aria-label="Search hidden"
                 required value={props.search} /> 
-                {/* <Link to={`/players/search/${props.search.fullname}`}> */}
             <Button onClick={props.handleSubmit} variant="outline-success" className="btn hidden">Search</Button>
-                {/* </Link> */}
             </Form>
         </div>   
     )

@@ -25,6 +25,7 @@ HTML | CSS| JavaScript| Bootstrap | React| Express |Sportmonk-API
 In the project directory, you can run:
 
 ### Deployed Heroku App
+https://soccer-player-profile-app.netlify.app/
 
 ### Installation
 
