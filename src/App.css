@@ -12,6 +12,32 @@ body{
   text-decoration: none;
 }
 
+/* --- div Container------ */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin: 30px 30px;
+
+}
+
+/* --- div Container------ */
+.container :hover{
+  transform: scale(1.1);
+}
+
+/* --- Container column------ */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px solid white;
+  text-decoration: none;
+  
+}
+
 .soccer{
   font-size: 40px;
   color: yellow;
@@ -36,15 +62,14 @@ h1{
   border-radius: 20px;
   margin: 30px;
   height: 300px;
-  margin-bottom: 30px;
 }
 
 /* -----player image Search page---- */
 .show .single-img{
-  height: 300px;
-  width: 230px;
-  border-radius: 20px;
-  padding-top: 20px;
+  height: 250px;
+  width: 210px;
+  border-radius: 40px;
+  border: 1px solid black;
 }
 
 /* ----single player container ------ */
@@ -64,8 +89,8 @@ h1{
   width: 40%;
   margin-left: 20px;
   font-style: italic;
-  color:crimson;
-  color: rgba(rgb(255, 0, 85), rgb(25, 171, 25), rgb(72, 72, 123), alpha);
+  color:brown;
+  /* color: rgba(rgb(255, 0, 85), rgb(25, 171, 25), rgb(72, 72, 123), alpha); */
 }
   
 /* ----- Profile details p Tags -----  */
@@ -104,28 +129,6 @@ strong{
   margin: 10px;
 }
   
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 200px;
-  margin: 30px 30px;
-
-}
-
-.container :hover{
-  transform: scale(1.1);
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 50px solid white;
-  text-decoration: none;
-  
-}
 
 .result{
   display: flex;

@@ -23,7 +23,7 @@ function Footer(){
             <MDBIcon fab icon='instagram' />
             </a> */}
 
-            <a className='btn  btn-outline-light m-1 linkIn' href='https://www.linkedin.com/in/bisrat-menberu/' target='_blank' role='button' style={{ backgroundColor: '#00695c'}}> LinkedIn
+            <a className='btn  btn-outline-light m-1 linkIn'  href='https://www.linkedin.com/in/bisrat-menberu/' target='_blank' role='button' style={{ backgroundColor: '#00695c'}}> LinkedIn
             {/* <img src={LinkedFooter} alt='name'/> */}
             <MDBIcon fab icon='linkedin-in' />
             </a> 
@@ -34,10 +34,10 @@ function Footer(){
             </section>
             </MDBContainer >
             <MDBContainer fluid>
-        <div className='text-center p-3' style={{ backgroundColor: '#00695c' }}>
-            &copy; {new Date().getFullYear()}  Copyright: 
-            <a className='text-white foot' href='https://www.linkedin.com/in/bisrat-menberu/'>
-            - Bisrat Amtataw
+        <div className='text-center p-3' style={{ backgroundColor: '#00695c' }}>Copyright:  
+            &copy; {new Date().getFullYear()}  Powered By sportmonks API
+            <a className='text-white foot Link' href='https://www.linkedin.com/in/bisrat-menberu/' target="_blank">. All Rights Reserved.
+            By Bisrat Amtataw
             </a>
         </div>
             </MDBContainer>
