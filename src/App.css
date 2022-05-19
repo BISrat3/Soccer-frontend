@@ -18,6 +18,10 @@ body{
   text-align: center;
 }
 
+.nav{
+  font-size:20px;
+  color: white;
+}
 
 h1{
   font-size: 20px;
@@ -31,6 +35,7 @@ h1{
   border-radius: 20px;
   margin: 10px;
   height: 300px;
+  margin-bottom: 30px;
 }
   
 .show .single-img{
@@ -39,20 +44,39 @@ h1{
   border-radius: 20px;
 }
 
+/* ----single player container ------ */
+.player-container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ----- Profile details div-----  */
 .aside{
-  background-color: green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/222/415/original/vector-football-soccer-background.jpg');
   border: 2px solid yellow;
   border-radius: 20px;
   width: 40%;
   margin-left: 20px;
   font-style: italic;
-  color: white;
+  color:crimson;
+  color: rgba(rgb(255, 0, 85), rgb(25, 171, 25), rgb(72, 72, 123), alpha);
 }
   
+/* ----- Profile details p Tags -----  */
 .aside p{
   margin-left: 20px;
   margin-top: 10px;
   font-size: 20px;
+}
+
+/* ----- Profile details -----  */
+strong{
+  color:azure;
+  font-size: 20px;
+  padding-right: 20px;
 }
 
 .pic {
@@ -61,10 +85,6 @@ h1{
   object-fit: contain;
 }
   
-strong{
-  color:maroon;
-  font-size: 20px;
-}
 .username{
   font-size: 25px;
   color: bisque;
@@ -85,9 +105,10 @@ strong{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 200px;
   margin: 30px 30px;
+
 }
 
 .container :hover{
@@ -100,6 +121,7 @@ strong{
   align-items: center;
   border-radius: 50px solid white;
   text-decoration: none;
+  
 }
 
 .result{
@@ -120,13 +142,16 @@ strong{
 .column h3{
   text-align: center;
   text-decoration: none;
-  color:blue;
+  color:black;
 }
 
 form{
   margin-right: 20px;
 }
 
+h3 .index{
+  padding-bottom: 10px;
+}
 .index {
   width: 200px;
   color: white;
@@ -159,11 +184,6 @@ form{
   color:white;
 }
   
-.player-container{
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
-}
 
 h3{
   margin: 0px;
@@ -204,15 +224,15 @@ img{
 
 .foot .showPlayer{
   bottom: 0;
-  padding-top: 40px;
-  margin-top: 20px;
+  padding-top: 10px;
+  margin-top: 0px;
   position: fixed;
   width: 100%;
-  margin-top: -200px;
+  /* margin-top: 200px; */
 }
 
 .insert{
-  margin-bottom: 140px;
+  margin-bottom: 200px; 
 }
 
 .hidden{

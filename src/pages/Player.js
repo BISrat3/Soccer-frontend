@@ -31,12 +31,12 @@ function Player (props){
                     <h1 className="soccer"> Soccer Player App</h1>              
                 </header>
             </div>
-            <div className="player-container">
+            <div className="container">
             <div className ="show column">
                 <img src={players.image_path} alt={players.common_name} className="single-img player"/>
             </div>
             <div className="aside">
-               <p><strong> First Name </strong> : {players.firstname}</p>
+               <p><strong>First Name </strong> : {players.firstname}</p>
                <p><strong>Full name </strong> : {players.fullname}</p>
                <p><strong>Name </strong>  : {players.common_name}</p>
                <p><strong>Birth Country </strong>  : {players.birthcountry}</p>
@@ -47,7 +47,10 @@ function Player (props){
                <p><strong>Weight </strong>  : {players.weight}</p>
             </div>
             </div>
-             <div>
+            <div className ="insert">
+                <h3 className="hidden">Single player page</h3>
+            </div>
+             <div className ="foot">
                 <Footer />
             </div>
         </>
