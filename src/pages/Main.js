@@ -17,9 +17,9 @@ function Main (props){
       }
       getPlayer()
       
-  },[]) 
+    },[]) 
 
-const loaded =() =>{
+    const loaded =() =>{
     return (
         <>  
             <div>
@@ -44,7 +44,7 @@ const loaded =() =>{
              </div>
        </>  
     )
- }
+    }
     return players ? loaded() : <h1> The Page is loading</h1>
 }
 
