@@ -118,6 +118,19 @@ strong{
   padding-right: 20px;
 }
 
+/* ----- About  -----  */
+.about{
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+
+/* ----- About li -----  */
+.about h2{
+    color: yellow;
+    margin-bottom: 10px;
+}
+
 .pic {
   width: 400px;
   height: 500px;

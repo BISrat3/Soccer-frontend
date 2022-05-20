@@ -9,7 +9,7 @@ function Footer(){
                 <MDBContainer className='p-4 pb-0' bgColor='#00695c'>
                 <section >
                     <a className='btn  btn-outline-light m-1 linkIn'  href='https://www.linkedin.com/in/bisrat-menberu/' role='button' style={{ backgroundColor: '#00695c'}}> LinkedIn
-            <MDBIcon fab icon='linkedin-in' />
+                <MDBIcon fab icon='linkedin-in' />
                     </a> 
                     <a className='btn btn-outline-light m-1 linkIn' href='https://github.com/BISrat3'  role='button' style={{ backgroundColor: '#00695c'}}>GitHub
                     </a>
