@@ -12,7 +12,8 @@ HTML | CSS| JavaScript| React Bootstrap | React | Visual Studio | Google Chrome 
 
 ## Show Page 
 <img width="1410" alt="Screen Shot 2022-05-19 at 7 55 50 PM" src="https://user-images.githubusercontent.com/99110345/169422729-755e8434-a793-44fb-bfaf-058cf56ffe8d.png">
-# Search Page
+
+## Search Players
 <img width="1400" alt="Screen Shot 2022-05-19 at 7 57 31 PM" src="https://user-images.githubusercontent.com/99110345/169422831-f081a4c4-308e-48da-bfe8-c34a2f8d685f.png">
 
 ## User Stories 
