@@ -32,18 +32,13 @@ HTML | CSS| JavaScript| React Bootstrap | React | Visual Studio | Google Chrome 
 https://soccer-player-profile-app.netlify.app/
 
 ### Installation
-<ul> Installation
-    <li>Install Visual Studio Code (VS Code)</li>
-    <li>Fork and Clone this repository- 
-    <li>Run "npm i" in your VS Code terminal and then to start the app "npm start" </li>
-    <li>The soccer player app will be open in the browser </li>
-</ul>
 <ul> Application Usage
     <li>Navigate to deploy web app</li>
     <li>Search for players </li>
     <li>See profile for specific player </li>
 </ul>
 <ul> Contribution Usage
+    <li>Install Visual Studio Code (VS Code)</li>
     <li>Fork and Clone Repo to you local repository</li>
     <li>Install dependencies (npm i)</li>
     <li>env(API-Token)</li>
