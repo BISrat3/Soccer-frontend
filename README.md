@@ -24,9 +24,9 @@ HTML | CSS| JavaScript| React Bootstrap | React | Visual Studio | Google Chrome 
 
 ### Stretch Goals
 ## Authentication
-    - User must sign in to search for specific player. 
-    - Authenticated user can give comments to the players and edit their comments.
-    - User can view others comments. 
+- User must sign in to search for specific player. 
+- Authenticated user can give comments to the players and edit their comments.
+- User can view others comments. 
     
 ### Deployed Netlify App
 https://soccer-player-profile-app.netlify.app/

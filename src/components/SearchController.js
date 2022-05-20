@@ -13,7 +13,6 @@ function SearchController(props){
             const URL =`https://soccer.sportmonks.com/api/v2.0/players/search/${search}?api_token=${process.env.REACT_APP_API_TOKEN}&per_page=1`
             const res = await fetch(URL)
             const data = await res.json()
-            console.log(data)
             if(!data.data.length){
                 SetWrongResult(true)
             }

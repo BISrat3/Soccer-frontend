@@ -79,8 +79,8 @@ h1{
 /* --------Error Message------  */
 .error{
   font-size: 30px;
-  text-align: center;
-  color: green;
+  margin-left: 30px;
+  color: white;
   border-radius: 1px solid white;
 }
 
@@ -121,6 +121,7 @@ strong{
 /* ----- About  -----  */
 .about{
   text-align: left;
+  margin-left: 20px;
   font-size: 25px;
   color: white;
 }
@@ -131,17 +132,20 @@ strong{
     margin-bottom: 10px;
 }
 
+/* ----- pic -----  */
 .pic {
   width: 400px;
   height: 500px;
   object-fit: contain;
 }
   
+/* ----- Username -----  */
 .username{
   font-size: 25px;
   color: bisque;
 }
-  
+
+/* home div */
 .home{
   display: flex;
   flex-direction: row;
@@ -153,7 +157,7 @@ strong{
   margin: 10px;
 }
   
-
+/* ----results-----  */
 .result{
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +166,8 @@ strong{
   width: 200px;
   margin: 30px 30px;
 }
-  
+
+/* ---result display--- */
 .result-column{
   display: flex;
   flex-direction: column;
@@ -179,7 +184,6 @@ form{
   text-align: center;
   text-decoration: none;
   color: white;
-  
 }
 
 /*------- h3 index for column div--- */
@@ -190,7 +194,7 @@ h3 .index{
 }
 
 /* ------- all h3 tags----------- */
-h3{
+h3 {
   margin: 0px;
   font-size: 20px;
   text-decoration: none;
@@ -212,16 +216,19 @@ h3{
 .search p{
   color: white;
 }
-  
+
+/* ---------- bootstrap p tags----------  */
 .me-auto{
   font-size: 30px;
 }
 
+/* ---------- search ----------  */
 .search{
   display: flex;
   justify-content: flex-end;
 }
   
+/* ---------- form ---------  */
 .form .btn{
   font-size: 30px;
 } 
@@ -238,7 +245,6 @@ h3{
 img{
   background-color:white;
   width: 150px;
-  /* background-image: url('https://images.unsplash.com/photo-1459865264687-59'); */
 }
 
 /* --------- player name ---------- */
@@ -252,6 +258,7 @@ img{
   cursor: pointer;
 }
 
+/* ---------- white ----------  */
 .white{
   color: white;
   text-align: center;
@@ -271,10 +278,12 @@ img{
   margin-bottom: 200px; 
 }
 
+/* ---------- hide div----------  */
 .hidden{
   display: none;
 }
 
+/* ---footer hide ----- */
 .foot{
   bottom: 0;
 }
