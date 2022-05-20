@@ -16,10 +16,10 @@ function Footer(){
                 </section>
             </MDBContainer >
             <MDBContainer fluid>
-                <div className='text-center p-3' style={{ backgroundColor: '#00695c' }}>Copyright:  
-                    &copy; {new Date().getFullYear()}  Powered By sportmonks API
-                    <a className='text-white foot Link' href='https://www.linkedin.com/in/bisrat-menberu/'>. All Rights Reserved.
-                    By Bisrat Amtataw
+                <div className='text-center p-3' style={{ backgroundColor: '#00695c' }}>Powered By sportmonks API. All Rights Reserved. Copyright:  
+                    &copy; {new Date().getFullYear()} Bisrat Amtataw
+                    <a className='text-white foot Link' href='https://www.linkedin.com/in/bisrat-menberu/'> 
+                  
                     </a>
                 </div>
             </MDBContainer>
