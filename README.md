@@ -23,8 +23,7 @@ HTML | CSS| JavaScript| React Bootstrap | React | Visual Studio | Google Chrome 
 - As a user, I would like to be able to search for players by their name, so that i can more easily find the player and knows his/her profile. 
 
 ### Stretch Goals
-## Authentication
-- User must sign in to search for specific player. 
+- Users will be able to sign in to search for a specific player.
 - Authenticated user can give comments to the players and edit their comments.
 - User can view others comments. 
     
