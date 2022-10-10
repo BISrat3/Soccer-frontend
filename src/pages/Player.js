@@ -35,7 +35,7 @@ function Player (props){
                <p><strong>Full name </strong> : {players.fullname}</p>
                <p><strong>Name </strong>  : {players.common_name}</p>
                <p><strong>Birth Country </strong>  : {players.birthcountry}</p>
-               <p><strong>Birth Date  </strong> : {players.birthdate}</p>
+               <p><strong>Birth Date  </strong> :    {players.birthdate}</p>
                <p><strong>Display Name </strong>  : {players.display_name}</p>
                <p><strong>Height </strong> : {players.height}</p>
                <p><strong>Nationality </strong>  : {players.nationality}</p>
