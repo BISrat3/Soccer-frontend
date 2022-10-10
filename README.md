@@ -1,7 +1,7 @@
 # Soccer Players App
 
 ## Description 
-It's a soccer player's app for people who have a hard time figuring out the players' information, where they are originally from and the player's profile. Users can see soccer players who are currently playing in the world's soccer leagues or country's leagues, and can search for a specific player by their name and click on a specific player to see a player's detailed information.
+It's a soccer player's app for people who have a hard time figuring out the players' information, where they are originally from and the player's profile. Users can see soccer players who are currently playing in the world soccer leagues or country's leagues, and can search for a specific player by their name and click on a specific player to see a player's detailed information.
 
 ## Techonologies Used
 HTML | CSS| JavaScript| React Bootstrap | React | Visual Studio | Google Chrome | Sportmonk-API | Postman
